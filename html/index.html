@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Windows XP</title>
+    <script defer src="../js/script.js" type="module"></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body class="main">
+    <div class="desktop">
+      <div class="desktop__app" id="gmailIcon">
+        <div>
+          <img src="../images/Gmail.png" alt="" class="desktop__app__icon" />
+        </div>
+        <div>Gmail</div>
+      </div>
+      <div class="desktop__app" id="notepadIcon">
+        <div>
+          <img src="../images/Notepad.png" alt="" class="desktop__app__icon" />
+        </div>
+        <div>Notepad</div>
+      </div>
+      <div class="desktop__app" id="photosIcon">
+        <div>
+          <img
+            src="../images/Photoviewer.png"
+            alt=""
+            class="desktop__app__icon"
+          />
+        </div>
+        <div>Photos</div>
+      </div>
+    </div>
+
+    <div class="gmailApp hide overlap">
+      <div class="gmailApp__header">
+        <div class="gmailApp__header__top">
+          <img
+            src="../images/QuickAccess.png"
+            alt=""
+            class="gmailApp__header__top__close"
+          />
+          <div class="gmailApp__header__top__title">
+            Inbox - BehzadSharafi@gmail.com
+          </div>
+          <div class="gmailApp__header__top__right">
+            <img
+              src="../images/Minimize.png"
+              alt=""
+              class="gmailApp__header__top__close"
+            />
+            <img
+              src="../images/cross.png"
+              alt=""
+              class="gmailApp__header__top__close"
+              id="closeGmail"
+            />
+          </div>
+        </div>
+        <div class="gmailApp__header__bottom">
+          <span>File</span>
+          <span>Home</span>
+          <span>Send / Receive</span>
+          <span>Folder</span>
+          <span>View</span>
+          <span>Help</span>
+        </div>
+      </div>
+      <div class="gmailApp__ribbon"></div>
+      <div class="gmailApp__body">
+        <div class="gmailApp__body__folders">
+          <ul>
+            <li>BehzaSharafi@gmail.com</li>
+            <li>Inbox</li>
+            <li>Outbox</li>
+            <li>Personal</li>
+            <li>Receipts</li>
+            <li>RSS Feeds</li>
+            <li>Work</li>
+            <li>Search Folders</li>
+          </ul>
+        </div>
+        <div class="gmailApp__body__emails">
+          <ul>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Linkedin
+                </div>
+                <div>Google is hiring</div>
+              </div>
+              <div>4/06/2023</div>
+            </li>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Facebook
+                </div>
+                <div>New message</div>
+              </div>
+              <div>3/05/2023</div>
+            </li>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Yahoo
+                </div>
+                <div>Please verify your email</div>
+              </div>
+              <div>2/04/2022</div>
+            </li>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Linkedin
+                </div>
+                <div>New Job Ad</div>
+              </div>
+              <div>4/06/2021</div>
+            </li>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Linkedin
+                </div>
+                <div>Try Premium</div>
+              </div>
+              <div>8/03/2021</div>
+            </li>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Nology
+                </div>
+                <div>Great Opportunity</div>
+              </div>
+              <div>1/02/2020</div>
+            </li>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Whatsapp
+                </div>
+                <div>New Login</div>
+              </div>
+              <div>24/01/2020</div>
+            </li>
+            <li>
+              <div>
+                <div class="gmailApp__body__emails__title text--bold">
+                  Linkedin
+                </div>
+                <div>New Message</div>
+              </div>
+              <div>15/01/2020</div>
+            </li>
+          </ul>
+        </div>
+        <div class="gmailApp__body__textArea">
+          <textarea rows="10" cols="40"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="notepadApp hide overlap">
+      <div class="notepadApp__header">
+        <div class="notepadApp__header__top">
+          <div class="notepadApp__header__top__left">
+            <img src="../images/Notepad.png" alt="" />
+            <span>Untitled - Notepad</span>
+          </div>
+          <div class="notepadApp__header__top__right">
+            <img src="../images/Minimize-Black.png" alt="" />
+            <img src="../images/Cross-Black.png" alt="" id="closeNotepad" />
+          </div>
+        </div>
+        <div class="notepadApp__header__bottom">
+          <span>File</span>
+          <span>Home</span>
+          <span>Send / Receive</span>
+          <span>Folder</span>
+          <span>View</span>
+          <span>Help</span>
+        </div>
+      </div>
+      <div class="notepadApp__body">
+        <textarea rows="10" cols="40"> </textarea>
+      </div>
+    </div>
+
+    <div class="photosApp hide overlap">
+      <div class="photosApp__header">
+        <div class="photosApp__header__top">
+          <div class="photosApp__header__top__left">
+            <img src="../images/Photoviewer.png" alt="" />
+            <span class="imageTitle">Beach</span>
+          </div>
+          <div class="photosApp__header__top__right">
+            <img src="../images/Minimize-Black.png" alt="" />
+            <img src="../images/Cross-Black.png" alt="" id="closePhotos" />
+          </div>
+        </div>
+        <div class="photosApp__header__bottom">
+          <span>File</span>
+          <span>Print</span>
+          <span>E-mail</span>
+          <span>Burn</span>
+          <span>Open</span>
+        </div>
+      </div>
+      <div class="photosApp__body">
+        <div class="photosApp__body__imageContainer">
+          <img
+            src="../images/Nature1.jpg"
+            alt=""
+            class="photosApp__body__imageContainer__nature1"
+            id="imageContainer"
+          />
+          <img src="../images/Next.png" alt="" class="photosApp__body__next" />
+        </div>
+      </div>
+    </div>
+
+    <section class="startMenu">
+      <div class="menu hide">
+        <div class="menu__bar menu__bar--user text--lg">
+          <div class="menu__bar__btn">
+            <img
+              src="../images/user-img.JPG"
+              alt="User Image"
+              class="menu__bar__btn__icon--user"
+            />
+            <span>Zad</span>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list__column">
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Internet-Explorer.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <div>
+                  <div class="text--bold">Internet</div>
+                  <div class="text--grey">Internet Explorer</div>
+                </div>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Email.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <div>
+                  <div class="text--bold">Email</div>
+                  <div class="text--grey">Outlook Express</div>
+                </div>
+              </div>
+            </div>
+            <div class="separator-line list__column__item"></div>
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Command-Prompt.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Command Prompt</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/MSN.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>MSN</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Windows-Media-Player.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Windows Media Player</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Windows-Messenger.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Windows Messenger</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Notepad.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Notepad</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--left">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Tour Windows XP.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Tour Windows XP</span>
+              </div>
+            </div>
+            <div class="separator-line list__column__item"></div>
+            <div
+              class="list__column__item list__column__item--left list__column__item--allPrograms"
+            >
+              <div class="list__column__item__icon text--bold">
+                <span>All Programs</span>
+                <img
+                  src="../images/Green-Triangle.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="list__column">
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/My-Documents.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span class="text--bold">My Documents</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Recent-Documents.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span class="text--bold">My Recent Documents</span>
+                <img
+                  src="../images/Black_Triangle.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img list__column__item__icon__img--blackTriangle"
+                />
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/My-Pictures.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span class="text--bold">My Pictures</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/My-Music.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span class="text--bold">My Music</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/My-Computer.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span class="text--bold">My Computer</span>
+              </div>
+            </div>
+            <div class="separator-line list__column__item"></div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Control-Panel.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Control Panel</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Set-Defaults.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Set Program Access and Defaults</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Printer.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Printers and Faxes</span>
+              </div>
+            </div>
+            <div class="separator-line list__column__item"></div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Help.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Help and Support</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Search.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Search</span>
+              </div>
+            </div>
+            <div class="list__column__item list__column__item--right">
+              <div class="list__column__item__icon">
+                <img
+                  src="../images/Run.png"
+                  alt="User Image"
+                  class="list__column__item__icon__img"
+                />
+                <span>Run...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__bar text--sm">
+          <div class="menu__bar__btn">
+            <img
+              src="../images/LogOff.png"
+              alt="Log Off"
+              class="menu__bar__btn__icon"
+            />
+            <span class="text--sm">Log Off</span>
+          </div>
+          <div class="menu__bar__btn">
+            <img
+              src="../images/TurnOff.png"
+              alt="Turn Off"
+              class="menu__bar__btn__icon"
+            />
+            <span>Turn Off Computer</span>
+          </div>
+        </div>
+      </div>
+      <footer class="taskbar">
+        <img
+          src="../images/Start-Button.JPG"
+          alt="Start Button"
+          class="taskbar__btn"
+        />
+        <div class="dateAndTime">
+          <img
+            src="../images/Sound.png"
+            alt="Sound"
+            class="dateAndTime__icon"
+          />
+          <img
+            src="../images/Bluetooth.png"
+            alt="Sound"
+            class="dateAndTime__icon"
+          />
+          <div class="dateAndTime__time"></div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
