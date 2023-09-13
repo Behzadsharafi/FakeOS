@@ -105,14 +105,16 @@ elements.forEach((element) => {
   });
 });
 
-function initializeDraggableWithHeader(appElement, headerElement) {
+const drag = (appElement, headerElement) => {
   let isDragging = false;
   let offsetX, offsetY;
+  let parentRect;
 
   headerElement.addEventListener("mousedown", (e) => {
     isDragging = true;
     appElement.style.cursor = "grabbing";
     const rect = appElement.getBoundingClientRect();
+    parentRect = appElement.parentElement.getBoundingClientRect();
     offsetX = e.clientX - rect.left;
     offsetY = e.clientY - rect.top;
   });
@@ -123,8 +125,14 @@ function initializeDraggableWithHeader(appElement, headerElement) {
     const newX = e.clientX - offsetX;
     const newY = e.clientY - offsetY;
 
-    appElement.style.left = newX + "px";
-    appElement.style.top = newY + "px";
+    const maxX = parentRect.width - appElement.offsetWidth;
+    const maxY = parentRect.height - appElement.offsetHeight;
+
+    const clampedX = Math.min(Math.max(0, newX), maxX);
+    const clampedY = Math.min(Math.max(0, newY), maxY);
+
+    appElement.style.left = clampedX + "px";
+    appElement.style.top = clampedY + "px";
   });
 
   document.addEventListener("mouseup", () => {
@@ -133,15 +141,15 @@ function initializeDraggableWithHeader(appElement, headerElement) {
       appElement.style.cursor = "grab";
     }
   });
-}
+};
 
 const gmailHeader = gmailApp.querySelector(".gmailApp__header");
 const notepadHeader = notepadApp.querySelector(".notepadApp__header");
 const photosHeader = photosApp.querySelector(".photosApp__header");
 
-initializeDraggableWithHeader(gmailApp, gmailHeader);
-initializeDraggableWithHeader(notepadApp, notepadHeader);
-initializeDraggableWithHeader(photosApp, photosHeader);
+drag(gmailApp, gmailHeader);
+drag(notepadApp, notepadHeader);
+drag(photosApp, photosHeader);
 
 const updateClock = () => {
   const today = new Date();

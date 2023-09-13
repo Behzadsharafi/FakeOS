@@ -353,13 +353,13 @@ figcaption {
 }
 .notepadApp {
   background-color: white;
-  height: 600px;
+  height: 500px;
   width: 70%;
   max-width: 800px;
   align-self: center;
   box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 200px;
+  top: 100px;
 
   &__header {
     height: 60px;
@@ -432,7 +432,7 @@ textarea {
   align-self: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 150px;
+  top: 70px;
 
   &__header {
     height: 60px;
