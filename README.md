@@ -12,7 +12,7 @@ This is a simulation of Windows XP user interface.
 
 ## Purpose
 
-- I have built this website to exhibit my HTML and CSS abilities, therefore some buttons are only placeholders and don't do any functions.
+I have built this website to exhibit my HTML and CSS abilities, therefore some buttons are only placeholders and don't do any functions.
 
 ## Build Steps
 
@@ -22,10 +22,11 @@ This is a simulation of Windows XP user interface.
 
 ## Features
 
--You can have a taste of good old Windows XP's UI again!
--There are 3 apps on the desktop that you can choose from including notepad, gmail (not functional), and photos app.
--When you open the apps you can drag them by clicking on the top ribbon.
+- You can have a taste of good old Windows XP's UI again!
+- There are 3 apps on the desktop that you can choose from including notepad, gmail (not functional), and photos app.
+- When you open the apps you can drag them by clicking on the top ribbon.
 
 ## Future Goals
 
-- Keep adding functionalities to the apps and adding more apps to choose from.
+- Adding more functionalities to the apps.
+- Adding a calculator app.
