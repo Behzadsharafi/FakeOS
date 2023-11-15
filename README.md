@@ -2,7 +2,7 @@
 
 This is a simulation of Windows XP user interface.
 
-[Launch the Live Site](https://zadsharafi.netlify.app)
+[Launch the Live Site](https://fakewinxp.netlify.app)
 
 ## Technologies
 
