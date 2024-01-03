@@ -2,7 +2,8 @@
 
 <div align='center'>
 
-<h1>  Fake Windows XP   <img src="./images/logo.png" alt="windows-icon" width="50" />   </h1>
+<div style="display: flex; align-items: center;"> <h1>  Fake Windows XP </h1> <img src="./images/logo.png" alt="windows-icon" width="50" /> </div>
+
 <p>This is a simulation of Windows XP user interface to exhibit my vanilla JavaScript, HTML, and CSS abilities. There is a start menu and 3 applications that the user can choose from. My focus in this project was on the UI, therefore some buttons and icons are merely placeholders and do not have functionality. The UI is not mobile-responsive as it is designed for pc.</p>
 
 <h4> <a href="https://fakewinxp.netlify.app/">View Live Site</a> <span> · </span> <a href="https://github.com/Behzadsharafi/FakeOS/issues"> Report a Bug </a> <span> · </span> <a href="https://github.com/Behzadsharafi/FakeOS/issues"> Request a Feature </a> </h4>
