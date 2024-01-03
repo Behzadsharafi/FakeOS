@@ -105,7 +105,7 @@ elements.forEach((element) => {
   });
 });
 
-const drag = (appElement, headerElement) => {
+export const drag = (appElement, headerElement) => {
   let isDragging = false;
   let offsetX, offsetY;
   let parentRect;
