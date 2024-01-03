@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Behzadsharafi/React-eShop/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Behzadsharafi/FakeOS/blob/main/LICENSE)
 
 <div align='center'>
 
@@ -72,39 +72,10 @@ Please read the [Code of Conduct](https://github.com/Behzadsharafi/FakeOS/blob/m
 
 ## :warning: License
 
-Distributed under the MIT License. See [License](https://github.com/Behzadsharafi/React-eShop/blob/master/LICENSE) for more information.
+Distributed under the MIT License. See [License](https://github.com/Behzadsharafi/FakeOS/blob/master/LICENSE) for more information.
 
 ## :handshake: Contact
 
 Email: behzadsharafi@gmail.com
 
 Linkedin: [https://www.linkedin.com/in/zadsharafi/](https://www.linkedin.com/in/zadsharafi/)
-
-# Fake Windows XP
-
-This is a simulation of Windows XP user interface.
-
-[Launch the Live Site](https://fakewinxp.netlify.app)
-
-## Technologies
-
-- <img src="./images/HTML.png"  width="20"> HTML
-- <img src="./images/Sass.png"  width="20"> SCSS
-- <img src="./images/JavaScript.png"  width="20"> JavaScript
-
-## Purpose
-
-I have built this website to exhibit my HTML and CSS abilities, therefore some buttons are only placeholders and don't do any functions.
-
-## Build Steps
-
-1. Clone the repository: git clone git@github.com:your-username/portfolio.git
-2. Navigate to the project folder: cd portfolio
-3. Open the index.html through windows explorer or VS code Live Server.
-
-## Features
-
-## Future Goals
-
-- Adding more functionalities to the apps.
-- Adding a calculator app.
